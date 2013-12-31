@@ -1,1 +1,11 @@
-This is an test repo that I am using to learn node, npm and grunt, as well as develop an overall better workflow
+GruntTest
+==============
+
+Learning to use Node and Grunt
+--------------
+
+*Developing a better workflow*
+
+- Learn Node
+- Learn Grunt
+- Develop a better workflow
