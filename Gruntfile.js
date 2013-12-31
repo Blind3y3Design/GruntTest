@@ -81,16 +81,16 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'images/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'images/'
-        }]
-      }
-    },
+    // imagemin: {
+    //   dynamic: {
+    //     files: [{
+    //       expand: true,
+    //       cwd: 'images/',
+    //       src: ['**/*.{png,jpg,gif}'],
+    //       dest: 'images/'
+    //     }]
+    //   }
+    // },
 
     // 'ftp-deploy': {
     //   build: {
@@ -145,7 +145,8 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default Task is basically a rebuild
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
+  // grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 
   grunt.registerTask('dev', ['connect', 'watch']);
 
