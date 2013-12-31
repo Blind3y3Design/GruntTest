@@ -124,7 +124,13 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    css: {
+        files: ['css/*.scss'],
+        tasks: ['sass'],
+        options: {
+            spawn: false,
+        }
+    },
     connect: {
       server: {
         options: {
